@@ -36,8 +36,6 @@ export const usePerson = () => {
     };
 
     const canMove = (x: number, y: number) => {
-        console.log(x, y)
-        if (x < 0 || y < 0) return false
         if (mapSpots[y] !== undefined && mapSpots[x] !== undefined) {
             if (mapSpots[y][x] === 1) return true
         }
